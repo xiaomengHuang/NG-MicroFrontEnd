@@ -30,7 +30,20 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/systemjs/dist/system.min.js",
+              "node_modules/systemjs/dist/extras/amd.min.js",
+              "node_modules/systemjs/dist/extras/named-exports.min.js",
+              "node_modules/systemjs/dist/extras/named-register.min.js",
+              "node_modules/import-map-overrides/dist/import-map-overrides.js",
+              "node_modules/rxjs/bundles/rxjs.umd.js",
+              "node_modules/@angular/core/bundles/core.umd.js",
+              "node_modules/@angular/common/bundles/common.umd.js",
+              "node_modules/@angular/common/bundles/common-http.umd.js",
+              "node_modules/@angular/compiler/bundles/compiler.umd.js",
+              "node_modules/@angular/platform-browser/bundles/platform-browser.umd.js",
+              "node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,6 +137,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "container"
 }
